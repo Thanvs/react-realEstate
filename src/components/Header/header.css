@@ -1,0 +1,41 @@
+.h-wrapper {
+  background-color: var(--black);
+  color: white;
+  /* position: relative; */
+}
+.h-container {
+  justify-content: space-between;
+  color: var(--secondary);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.h-menu {
+  gap: 2rem;
+}
+.h-menu > *:hover {
+  color: white;
+  transition: 0.4s;
+}
+.menu-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .h-menu {
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 3rem;
+    font-weight: 500;
+    gap: 2rem;
+    right: 4rem;
+    z-index: 100;
+    box-shadow: 1px 4px 4px rgba(140, 140, 140, 0.558);
+    transition: all 300ms ease-in;
+  }
+}

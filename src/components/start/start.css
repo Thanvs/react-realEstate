@@ -1,0 +1,21 @@
+.s-container {
+  gap: 1.5rem;
+  background: #4161df;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 6px solid #5d77d6;
+  text-align: center;
+}
+.s-container p {
+  /* font-weight: 600; */
+  color: white;
+}
+.s-container span {
+  color: #ffffff96;
+}
+.s-container .button {
+  background: #5a73d7;
+  border: 2px solid white;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}

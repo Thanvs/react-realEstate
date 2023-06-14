@@ -81,8 +81,30 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
 }
-
-/* media queries */
+.button {
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: var(--blue);
+  font-weight: 500;
+  transition: all 300ms ease-in;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+.img-container {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+}
+.img-container > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60rem 60rem 0 0;
+}
+/* media queri0es */
 @media (min-width: 1536px) {
   .innerWidth {
     max-width: 1280px;
@@ -108,5 +130,10 @@ a {
   }
   .orangeText {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 505px) {
+  .img-container {
+    width: 100%;
   }
 }
