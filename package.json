@@ -28,13 +28,13 @@
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZainRk/RealEstate-web-starterpack.git"
+    "url": "git+https://github.com/Thanvs/react-realEstate.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ZainRk/RealEstate-web-starterpack/issues"
+    "url": "https://github.com/Thanvs/react-realEstate/issues"
   },
-  "homepage": "https://github.com/ZainRk/RealEstate-web-starterpack#readme",
+  "homepage": "https://github.com/Thanvs/react-realEstate#readme",
   "description": ""
 }
