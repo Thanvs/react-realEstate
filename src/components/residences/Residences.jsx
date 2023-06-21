@@ -4,9 +4,10 @@ import data from "../../utils/slider.json";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { SliderSettings } from "../../utils/Common";
 import "swiper/swiper.min.css";
+import { Outlet } from "react-router-dom";
 const Residences = () => {
   return (
-    <div className="r-wrapper">
+    <div className="r-wrapper" id="residence">
       <div className="paddings innerWidth r-container">
         <div className="r-head flexColStart">
           <span className="orangeText">Best Choices</span>

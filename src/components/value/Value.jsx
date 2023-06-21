@@ -13,7 +13,7 @@ import items from "../../utils/accordion";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 const Value = () => {
   return (
-    <div className="v-wrapper">
+    <div className="v-wrapper" id="value">
       <div className="paddings innerWidth flexCenter v-container">
         <div className="v-left">
           <div className="img-container">

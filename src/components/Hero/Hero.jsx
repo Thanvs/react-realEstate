@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import { Outlet } from "react-router-dom";
 function Hero() {
   return (
-    <section className="hero-wrapper">
+    <section className="hero-wrapper" id="hero">
       <div className="paddings innerWidth flexCenter hero-container">
         <div className="hero-left">
           <div className="hero-title">

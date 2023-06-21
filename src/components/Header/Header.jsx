@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import "./header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
+import { Link, Outlet } from "react-router-dom";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const getMenuStyle = (isOpen) => {
@@ -12,25 +13,26 @@ function Header() {
     }
   };
   return (
-    <section className="h-wrapper">
-      <div className="h-container paddings innerWidth flexCenter">
-        <img src="./logo.png" width={100} alt="logo" />
-        <OutsideClickHandler onOutsideClick={() => setIsOpen(false)}>
-          <div className="h-menu flexCenter" style={getMenuStyle(isOpen)}>
-            <a href="">Residences</a>
-            <a href="">Our Value</a>
-            <a href="">Contact Us</a>
-            <a href="">Get Started</a>
-            <a className="button" href="">
-              Contact
-            </a>
+    <Fragment>
+      <section className="h-wrapper">
+        <div className="h-container paddings innerWidth flexCenter">
+          <img src="./logo.png" width={100} alt="logo" />
+          <OutsideClickHandler onOutsideClick={() => setIsOpen(false)}>
+            <div className="h-menu flexCenter" style={getMenuStyle(isOpen)}>
+              <a href="#residence">Residences</a>
+              <a href="#value">Our Value</a>
+              <a href="#contact">Contact Us</a>
+              <a href="#start">Get Started</a>
+              <a className="button">Contact</a>
+            </div>
+          </OutsideClickHandler>
+          <div className="menu-icon" onClick={() => setIsOpen((prev) => !prev)}>
+            <BiMenuAltRight size={30} />
           </div>
-        </OutsideClickHandler>
-        <div className="menu-icon" onClick={() => setIsOpen((prev) => !prev)}>
-          <BiMenuAltRight size={30} />
         </div>
-      </div>
-    </section>
+      </section>
+      <Outlet />
+    </Fragment>
   );
 }
 
